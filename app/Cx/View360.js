@@ -1,30 +1,15 @@
-import Image from "next/image";
+'use client';
 
-function Icon360({ className }) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 120 120"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden
-    >
-      <circle cx="58" cy="64" r="44" stroke="white" strokeWidth="3" strokeLinecap="round" />
-      <circle cx="98" cy="34" r="5.5" fill="white" />
-      <text
-        x="58"
-        y="70"
-        textAnchor="middle"
-        fill="white"
-        fontFamily="ui-sans-serif, system-ui, sans-serif"
-        fontSize="28"
-        fontWeight="700"
-      >
-        360
-      </text>
-    </svg>
-  );
-}
+import dynamic from "next/dynamic";
+
+const View360Canvas = dynamic(() => import("./View360Canvas"), {
+  ssr: false,
+  loading: () => (
+    <div className="absolute inset-0 flex items-center justify-center bg-neutral-950 text-sm text-white/55">
+      Loading 3D model…
+    </div>
+  ),
+});
 
 export default function View360Section() {
   return (
@@ -40,22 +25,10 @@ export default function View360Section() {
         <div
           className="relative mx-auto aspect-2/1 w-full max-w-4xl overflow-hidden rounded-3xl bg-neutral-950 sm:rounded-[1.75rem]"
           role="region"
-          aria-label="360 degree product view"
+          aria-label="Interactive 3D product view — drag to rotate"
           data-aos="flip-left"
         >
-          <Image
-            src="/360-view.png"
-            alt="Product 360 view — interactive rotation"
-            fill
-            className="object-cover object-center grayscale brightness-[0.5] contrast-110"
-            sizes="(max-width: 896px) 100vw, 896px"
-          />
-          <div className="absolute inset-0 bg-neutral-950/55" aria-hidden />
-          <div className="absolute inset-0 flex items-center justify-center p-6">
-            <div className="pointer-events-none flex flex-col items-center">
-              <Icon360 className="h-19 w-19 shrink-0 drop-shadow-md sm:h-22 sm:w-22" />
-            </div>
-          </div>
+          <View360Canvas />
         </div>
       </div>
     </section>

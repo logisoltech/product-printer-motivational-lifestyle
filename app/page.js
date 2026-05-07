@@ -17,7 +17,7 @@ export default function Home() {
       <VideoTwo />
       <PrinterAnnotatedSection />
       <IDKSection />
-      <View360Section />
+      {/* <View360Section /> */}
       <SpecsSection />
       <FooterSection />
     </div>
