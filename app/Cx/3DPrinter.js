@@ -25,30 +25,32 @@ export default function ThreeDPrinterSection() {
         </p>
 
         <div
-          className="mt-10 flex w-full flex-col items-center gap-8 md:mt-12 lg:flex-row lg:items-center lg:justify-between lg:gap-10 xl:gap-14"
+          className="mt-10 flex w-full flex-col items-center gap-8 md:mt-12 lg:flex-row lg:items-center lg:justify-center lg:gap-28 xl:gap-36"
           data-aos="fade-up"
           data-aos-delay="140"
         >
-          <div className="shrink-0 translate-x-20 sm:translate-x-28 lg:translate-x-40 xl:translate-x-52">
+          <div className="shrink-0 translate-x-6 sm:translate-x-8 lg:translate-x-10 xl:translate-x-12">
             <PrinterAnnotated className="relative w-[min(14rem,42vw)] shrink-0 overflow-visible sm:w-56 md:w-64 lg:w-72" />
           </div>
 
-          <div className="flex shrink-0 -translate-x-8 items-center justify-center gap-6 sm:-translate-x-12 sm:gap-8 lg:-translate-x-20 xl:-translate-x-28">
-            <Image
-              src="/can.png"
-              alt="Ready made food product can"
-              width={320}
-              height={480}
-              className="h-auto w-[min(14rem,42vw)] shrink-0 sm:w-56 md:w-64 lg:w-72"
-            />
-            <Image
-              src="/table-printer.png"
-              alt="3D home printer and recycler on computer table"
-              width={1150}
-              height={1061}
-              className="h-auto w-[min(14rem,42vw)] shrink-0 sm:w-56 md:w-64 lg:w-72"
-              sizes="(max-width: 640px) 42vw, (max-width: 1024px) 16rem, 18rem"
-            />
+          <div className="relative shrink-0 -translate-x-2 sm:-translate-x-4 lg:-translate-x-6 xl:-translate-x-8">
+            <div className="relative w-[min(14rem,42vw)] sm:w-56 md:w-64 lg:w-72 xl:w-80">
+              <Image
+                src="/table-printer.png"
+                alt="3D home printer and recycler on computer table"
+                width={1150}
+                height={1061}
+                className="h-auto w-full"
+                sizes="(max-width: 640px) 42vw, (max-width: 1024px) 16rem, 20rem"
+              />
+              <Image
+                src="/can.png"
+                alt="Ready made food product can on table"
+                width={320}
+                height={480}
+                className="absolute bottom-[54%] left-[62%] z-10 h-auto w-[24%] drop-shadow-[0_8px_12px_rgba(0,0,0,0.25)] sm:w-[22%]"
+              />
+            </div>
           </div>
         </div>
       </div>

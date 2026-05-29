@@ -15,7 +15,7 @@ export default function Home() {
       <VideoFeature />
       <ThreeDPrinterSection />
       <IDKSection />
-      <PrinterAnnotatedSection />
+      {/* <PrinterAnnotatedSection /> */}
       <VideoTwo />
       {/* <View360Section /> */}
       <SpecsSection />
