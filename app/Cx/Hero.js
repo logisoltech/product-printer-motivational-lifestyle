@@ -62,11 +62,19 @@ export default function Hero() {
 
       <Nav />
 
-      {/* Bottom white fade (image polish) */}
-      <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 z-15 h-[min(42vh,22rem)] bg-linear-to-t from-white from-12% via-white/85 via-45% to-transparent"
-        aria-hidden
-      />
+      <div className="absolute inset-x-0 bottom-3 z-20 flex translate-x-4 flex-col items-center sm:bottom-5 sm:translate-x-6 md:bottom-6 md:translate-x-16">
+        <Image
+          src="/can.png"
+          alt="Product can"
+          width={320}
+          height={480}
+          className="h-auto w-[min(14rem,46vw)] sm:w-[min(16rem,42vw)] md:w-64"
+          priority
+        />
+        <p className="mt-2 text-center text-sm font-bold tracking-wide text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.45)] sm:mt-3 sm:text-base md:text-lg">
+          Ready Made Food Version
+        </p>
+      </div>
 
       {/* Headline: below navbar — inner wrapper caps width on all breakpoints */}
       <div
