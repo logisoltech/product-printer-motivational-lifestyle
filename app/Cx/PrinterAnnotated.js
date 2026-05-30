@@ -109,7 +109,7 @@ export function PrinterAnnotated({
             transform: "translateY(-50%)",
           }}
         >
-          <p className={labelClass}>Product printer one ingredient formula</p>
+          <p className={labelClass}>Product printer one ingredient formula filament/pellets</p>
         </div>
       </div>
     </div>
