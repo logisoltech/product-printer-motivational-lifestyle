@@ -71,18 +71,18 @@ export function PrinterAnnotated({
         <div
           className="absolute max-w-[min(52vw,14rem)] text-right sm:max-w-[210px]"
           style={{
-            left: pctX(-496),
+            left: pctX(-690),
             top: pctY(food.y),
             transform: "translateY(-50%)",
           }}
         >
-          <p className={labelClass}>Food printer</p>
+          <p className={labelClass}>Food printer one ingredient formula</p>
         </div>
 
         <div
           className="absolute max-w-[min(52vw,14rem)] text-right sm:max-w-[210px]"
           style={{
-            left: pctX(-600),
+            left: pctX(-500),
             top: pctY(table.y),
             transform: "translateY(-50%)",
           }}
@@ -93,7 +93,7 @@ export function PrinterAnnotated({
         <div
           className="absolute max-w-[min(52vw,14rem)] text-right sm:max-w-[210px]"
           style={{
-            left: pctX(-390),
+            left: pctX(-300),
             top: pctY(recycler.y),
             transform: "translateY(-50%)",
           }}
@@ -109,7 +109,7 @@ export function PrinterAnnotated({
             transform: "translateY(-50%)",
           }}
         >
-          <p className={labelClass}>Product printer</p>
+          <p className={labelClass}>Product printer one ingredient formula</p>
         </div>
       </div>
     </div>

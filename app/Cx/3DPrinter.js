@@ -30,18 +30,18 @@ export default function ThreeDPrinterSection() {
           data-aos-delay="140"
         >
           <div className="shrink-0 translate-x-6 sm:translate-x-8 lg:translate-x-10 xl:translate-x-12">
-            <PrinterAnnotated className="relative w-[min(14rem,42vw)] shrink-0 overflow-visible sm:w-56 md:w-64 lg:w-72" />
+            <PrinterAnnotated className="relative w-[min(16rem,48vw)] shrink-0 overflow-visible sm:w-64 md:w-72 lg:w-80 xl:w-96" />
           </div>
 
-          <div className="relative shrink-0 -translate-x-2 sm:-translate-x-4 lg:-translate-x-6 xl:-translate-x-8">
-            <div className="relative w-[min(14rem,42vw)] sm:w-56 md:w-64 lg:w-72 xl:w-80">
+          <div className="relative shrink-0 translate-x-4 sm:translate-x-6 lg:translate-x-10 xl:translate-x-14">
+            <div className="relative w-[min(12rem,38vw)] sm:w-48 md:w-56 lg:w-64 xl:w-72">
               <Image
                 src="/table-printer.png"
                 alt="3D home printer and recycler on computer table"
                 width={1150}
                 height={1061}
                 className="h-auto w-full"
-                sizes="(max-width: 640px) 42vw, (max-width: 1024px) 16rem, 20rem"
+                sizes="(max-width: 640px) 38vw, (max-width: 1024px) 14rem, 18rem"
               />
               <Image
                 src="/can.png"

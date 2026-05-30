@@ -66,13 +66,13 @@ export default function Hero() {
         <Image
           src="/can.png"
           alt="Product can"
-          width={320}
-          height={480}
-          className="h-auto w-[min(14rem,46vw)] sm:w-[min(16rem,42vw)] md:w-64"
+          width={300}
+          height={460}
+          className="h-auto w-[min(14rem,46vw)] sm:w-[min(16rem,42vw)] md:w-54"
           priority
         />
-        <p className="mt-2 text-center text-sm font-bold tracking-wide text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.45)] sm:mt-3 sm:text-base md:text-lg">
-          Ready Made Food Version
+        <p className=" ml-4 text-center text-sm font-bold tracking-wide text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.45)] sm:text-base md:text-lg">
+          Ready Made Food Version <br/> MD motivational Drink & Diet.
         </p>
       </div>
 
