@@ -84,9 +84,10 @@ export default function Hero() {
       >
         <div className="w-full max-w-[min(34rem,calc(100%-2rem))] text-center sm:max-w-[min(38rem,calc(100%-3rem))] md:max-w-[min(42rem,calc(100%-4rem))]">
           <p className="font-extrabold uppercase tracking-[0.025em] text-black text-base leading-snug drop-shadow-[0_1px_12px_rgba(255,255,255,0.55)] sm:text-lg sm:tracking-[0.02em] md:text-xl md:leading-snug lg:text-[1.35rem] lg:leading-snug">
-            ONE INGREDIENT PRODUCT PRINTER - ONE PRODUCT PRINTER - ONE
-            INGREDIENT FORMULA DURABLE, FLEXIBLE AND RECYCLABLE INTO ANY OTHER
-            PRODUCT
+            <span className="block uppercase">One product printer</span>
+            <span className="block">One ingredient formula</span>
+            <span className="block">Durable, flexible</span>
+            <span className="block">Recyclable into any other product</span>
           </p>
           <p className="mt-3 text-pretty text-sm font-normal leading-snug text-black/90 drop-shadow-[0_1px_10px_rgba(255,255,255,0.45)] sm:mt-4 sm:text-[0.9375rem] sm:leading-snug md:text-base md:leading-snug">
             All you need is the right A.I. software that we will supply for each
