@@ -78,7 +78,7 @@ export default function Hero() {
 
       {/* Headline: below navbar — inner wrapper caps width on all breakpoints */}
       <div
-        className="absolute inset-x-0 top-32 z-20 flex justify-center px-5 sm:top-[5.75rem] sm:px-10 md:top-24 lg:top-[6.75rem]"
+        className="absolute inset-x-0 top-28 z-20 flex justify-center px-5 sm:top-[5.25rem] sm:px-10 md:top-20 lg:top-24"
         data-aos="fade-up"
         data-aos-delay="220"
       >
