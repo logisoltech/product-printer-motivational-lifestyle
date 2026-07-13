@@ -89,7 +89,7 @@ export default function Hero() {
             <span className="block">Durable, flexible</span>
             <span className="block">Recyclable into any other product</span>
           </p>
-          <p className="mt-1.5 text-pretty text-xs font-normal leading-snug text-black/90 drop-shadow-[0_1px_10px_rgba(255,255,255,0.45)] sm:mt-2 sm:text-sm md:text-sm">
+          <p className="mt-1.5 text-pretty text-sm font-semibold leading-snug text-[#32455A] drop-shadow-[0_1px_10px_rgba(255,255,255,0.45)] sm:mt-2 sm:text-base md:text-base">
             All you need is the right A.I. software that we will supply for each
             product.
           </p>

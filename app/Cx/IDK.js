@@ -8,10 +8,15 @@ export default function IDKSection() {
           className="flex flex-col text-center md:ml-auto md:max-w-md md:text-left lg:max-w-lg"
           data-aos="fade-right"
         >
-          <h2 className="text-xl font-bold uppercase tracking-wide text-neutral-950 sm:text-2xl md:text-3xl lg:text-4xl">
-            Taster <br/> Comes with printer
+          <h2 className="font-bold uppercase tracking-wide text-neutral-950">
+            <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+              Taster
+            </span>
+            <span className="mt-1 block text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+              Comes with printer
+            </span>
           </h2>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-neutral-800 sm:mt-5 sm:text-lg md:max-w-none">
+          <p className="mt-4 max-w-xl text-base font-bold leading-relaxed text-neutral-800 sm:mt-5 sm:text-lg md:max-w-none">
             Always healthiest tastiest - comes with taster. Choose any taste you
             want just place it on your tongue.
           </p>
