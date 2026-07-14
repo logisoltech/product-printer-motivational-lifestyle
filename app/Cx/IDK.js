@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function IDKSection() {
   return (
     <section className="scroll-mt-6 bg-[#E2E0D1] px-4 py-10 sm:px-6 md:px-8 md:py-14">
-      <div className="mx-auto grid max-w-7xl items-center gap-8 md:grid-cols-[1fr_1.35fr] md:gap-10 lg:gap-12">
+      <div className="mx-auto grid max-w-7xl items-center gap-8 md:grid-cols-[1fr_1.9fr] md:gap-10 lg:gap-12">
         <div
           className="flex flex-col text-center md:ml-auto md:max-w-md md:text-left lg:max-w-lg"
           data-aos="fade-right"
@@ -28,8 +28,8 @@ export default function IDKSection() {
             alt="Food printer taster device with taste map"
             width={1200}
             height={900}
-            className="h-auto w-full max-w-[min(100%,34rem)] object-contain sm:max-w-2xl md:max-w-full lg:max-w-4xl xl:max-w-5xl"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 64rem"
+            className="h-auto w-full max-w-[min(100%,40rem)] object-contain sm:max-w-3xl md:max-w-full"
+            sizes="(max-width: 768px) 100vw, 60vw"
           />
         </div>
       </div>
