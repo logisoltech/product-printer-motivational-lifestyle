@@ -71,7 +71,7 @@ export default function Hero() {
           className="h-auto w-[min(14rem,46vw)] sm:w-[min(16rem,42vw)] md:w-54"
           priority
         />
-        <p className=" ml-4 text-center text-sm font-bold tracking-wide text-[#AC8B16] drop-shadow-[0_1px_10px_rgba(255,255,255,0.45)] sm:text-base md:text-lg">
+        <p className=" ml-4 text-center text-sm font-bold tracking-wide text-[#D4AF37] drop-shadow-[0_1px_10px_rgba(255,255,255,0.45)] sm:text-base md:text-lg">
           Ready Made Food Version <br/> MD motivational Drink & Diet.
         </p>
       </div>
