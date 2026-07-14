@@ -17,7 +17,7 @@ export default function IDKSection() {
             </span>
           </h2>
           <p className="mt-4 max-w-xl text-base font-bold leading-relaxed text-neutral-800 sm:mt-5 sm:text-lg md:max-w-none">
-            Always healthiest tastiest - comes with taster. Choose any taste you
+            Always healthiest tastiest, comes with taster. Choose any taste you
             want just place it on your tongue.
           </p>
         </div>
