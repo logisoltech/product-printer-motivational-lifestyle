@@ -41,7 +41,7 @@ export default function Nav() {
         </button>
         <button
           type="button"
-          className="cursor-pointer whitespace-nowrap rounded-full border border-[#D4AF37] bg-black/40 px-3.5 py-2 text-xs font-bold text-[#E5C45A] shadow-lg backdrop-blur-md transition hover:bg-[#D4AF37] hover:text-neutral-950 sm:text-sm"
+          className="cursor-pointer whitespace-nowrap rounded-full bg-[#D4AF37] px-3.5 py-2 text-xs font-bold text-neutral-950 shadow-lg transition hover:bg-[#E5C45A] sm:text-sm"
         >
           Buy M.D Crypto
         </button>
