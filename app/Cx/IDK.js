@@ -3,9 +3,20 @@ import Image from "next/image";
 export default function IDKSection() {
   return (
     <section className="scroll-mt-6 bg-[#E2E0D1] px-4 py-10 sm:px-6 md:px-8 md:py-14">
-      <div className="mx-auto grid max-w-7xl items-center gap-8 md:grid-cols-[1fr_1.9fr] md:gap-10 lg:gap-12">
+      <div className="relative mx-auto max-w-7xl">
+        <div className="relative w-full translate-x-14 sm:translate-x-20 md:translate-x-36 lg:translate-x-44" data-aos="fade-up">
+          <Image
+            src="/taster-img.png"
+            alt="Food printer taster device with taste map"
+            width={1200}
+            height={900}
+            className="mx-auto h-auto w-full max-w-[min(100%,28rem)] object-contain sm:max-w-2xl md:max-w-3xl lg:max-w-4xl"
+            sizes="(max-width: 768px) 100vw, 56rem"
+          />
+        </div>
+
         <div
-          className="flex flex-col text-center md:ml-auto md:max-w-md md:text-left lg:max-w-lg"
+          className="relative z-10 mt-6 flex flex-col text-center md:absolute md:left-18 md:top-1/2 md:mt-0 md:max-w-sm md:-translate-x-4 md:-translate-y-1/2 md:text-left lg:max-w-md lg:-translate-x-8 xl:-translate-x-12"
           data-aos="fade-right"
         >
           <h2 className="font-bold uppercase tracking-wide text-neutral-950">
@@ -20,17 +31,6 @@ export default function IDKSection() {
             Always healthiest tastiest, comes with taster. Choose any taste you
             want just place it on your tongue.
           </p>
-        </div>
-
-        <div className="relative flex justify-center md:justify-end" data-aos="fade-left">
-          <Image
-            src="/taster-img.png"
-            alt="Food printer taster device with taste map"
-            width={1200}
-            height={900}
-            className="h-auto w-full max-w-[min(100%,40rem)] object-contain sm:max-w-3xl md:max-w-full"
-            sizes="(max-width: 768px) 100vw, 60vw"
-          />
         </div>
       </div>
     </section>
