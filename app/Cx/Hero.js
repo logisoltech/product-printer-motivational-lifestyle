@@ -55,7 +55,7 @@ export default function Hero() {
           alt="Institutional Lifestyle"
           width={400}
           height={130}
-          className="h-16 w-auto sm:h-19 md:h-20 lg:h-24"
+          className="h-20 w-auto sm:h-22 md:h-24 lg:h-28"
           priority
         />
       </a>
@@ -71,7 +71,7 @@ export default function Hero() {
           className="h-auto w-[min(14rem,46vw)] sm:w-[min(16rem,42vw)] md:w-54"
           priority
         />
-        <p className=" ml-4 text-center text-sm font-bold tracking-wide text-[#F9E76A] drop-shadow-[0_1px_10px_rgba(255,255,255,0.45)] sm:text-base md:text-lg">
+        <p className="ml-4 text-center text-sm font-bold tracking-wide text-[#F9E76A] [-webkit-text-stroke:1px_#000] [paint-order:stroke_fill] [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000] sm:text-base md:text-lg md:[-webkit-text-stroke:1.25px_#000]">
           Ready Made Food Version <br/> MD motivational Drink & Diet.
         </p>
       </div>
