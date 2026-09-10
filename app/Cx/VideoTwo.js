@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 
 export default function VideoTwo() {
-  const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
   const containerRef = useRef(null);
 
@@ -16,13 +15,9 @@ export default function VideoTwo() {
       ([entry]) => {
         if (entry.isIntersecting) {
           video.muted = true;
-          video
-            .play()
-            .then(() => setIsPlaying(true))
-            .catch(() => setIsPlaying(false));
+          video.play().catch(() => {});
         } else {
           video.pause();
-          setIsPlaying(false);
         }
       },
       { threshold: 0.45 }
@@ -35,7 +30,6 @@ export default function VideoTwo() {
   const handleEnded = () => {
     const v = videoRef.current;
     if (v) v.currentTime = 0;
-    setIsPlaying(false);
   };
 
   return (
@@ -58,7 +52,6 @@ export default function VideoTwo() {
           playsInline
           muted
           preload="metadata"
-          controls={isPlaying}
           onEnded={handleEnded}
         />
       </div>

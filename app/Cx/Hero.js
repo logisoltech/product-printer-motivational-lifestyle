@@ -68,7 +68,7 @@ export default function Hero() {
           alt="Product can"
           width={300}
           height={460}
-          className="h-auto w-[min(14rem,46vw)] sm:w-[min(16rem,42vw)] md:w-54"
+          className="h-auto w-[min(11rem,38vw)] sm:w-[min(13rem,34vw)] md:w-44"
           priority
         />
         <p className="ml-4 text-center text-sm font-bold tracking-wide text-[#F9E76A] [-webkit-text-stroke:1px_#000] [paint-order:stroke_fill] [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000] sm:text-base md:text-lg md:[-webkit-text-stroke:1.25px_#000]">
