@@ -1,26 +1,36 @@
 "use client";
 
-import { FaPlay } from "react-icons/fa";
 import { useState, useRef, useEffect } from "react";
 
 export default function VideoTwo() {
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
+  const containerRef = useRef(null);
 
   useEffect(() => {
-    const v = videoRef.current;
-    if (v) {
-      v.pause();
-      v.currentTime = 0;
-    }
-  }, []);
+    const video = videoRef.current;
+    const container = containerRef.current;
+    if (!video || !container) return;
 
-  const handlePlay = () => {
-    const v = videoRef.current;
-    if (!v) return;
-    setIsPlaying(true);
-    v.play().catch(() => setIsPlaying(false));
-  };
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.muted = true;
+          video
+            .play()
+            .then(() => setIsPlaying(true))
+            .catch(() => setIsPlaying(false));
+        } else {
+          video.pause();
+          setIsPlaying(false);
+        }
+      },
+      { threshold: 0.45 }
+    );
+
+    observer.observe(container);
+    return () => observer.disconnect();
+  }, []);
 
   const handleEnded = () => {
     const v = videoRef.current;
@@ -37,38 +47,20 @@ export default function VideoTwo() {
         Model MD2
       </h2>
       <div
+        ref={containerRef}
         className="relative mx-auto aspect-video max-w-5xl overflow-hidden rounded-3xl sm:rounded-[1.75rem]"
         data-aos="zoom-in-up"
       >
-        {/* VIDEO */}
         <video
           ref={videoRef}
           className="absolute inset-0 h-full w-full object-cover"
           src="/vid-2.mp4"
           playsInline
+          muted
           preload="metadata"
           controls={isPlaying}
           onEnded={handleEnded}
         />
-
-        {/* OVERLAY + PLAY BUTTON */}
-        {!isPlaying && (
-          <>
-            <div className="absolute inset-0 z-[1] bg-black/35" aria-hidden />
-
-            <div className="absolute inset-0 z-10 flex items-center justify-center p-4">
-              <button
-                type="button"
-                onClick={handlePlay}
-                className="inline-flex cursor-pointer items-center gap-2.5 rounded-full bg-white px-6 py-3 text-sm font-normal text-neutral-900 shadow-lg transition duration-200 ease-out hover:scale-105 hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:px-8 sm:py-3.5 sm:text-base"
-                aria-label="Play video"
-              >
-                <FaPlay className="size-3.5 shrink-0 text-red-600 sm:size-4" />
-                Play video
-              </button>
-            </div>
-          </>
-        )}
       </div>
     </section>
   );
