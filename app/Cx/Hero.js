@@ -84,7 +84,7 @@ export default function Hero() {
       >
         <div className="w-full max-w-[min(34rem,calc(100%-2rem))] text-center sm:max-w-[min(38rem,calc(100%-3rem))] md:max-w-[min(42rem,calc(100%-4rem))]">
           <p className="text-sm font-extrabold uppercase leading-tight tracking-[0.025em] text-black drop-shadow-[0_1px_12px_rgba(255,255,255,0.55)] sm:text-base sm:tracking-[0.02em] md:text-lg lg:text-xl">
-            <span className="block uppercase">One product printer</span>
+            <span className="block uppercase">One product & food printer</span>
             <span className="block">One ingredient formula</span>
             <span className="block">Durable, flexible</span>
             <span className="block">Recyclable into any other product</span>
