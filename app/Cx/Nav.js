@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 const LINKS = [
   { label: "About", href: "#about" },
   { label: "Spreadsheet", href: "#spreadsheet" },
@@ -5,7 +9,28 @@ const LINKS = [
   { label: "Specs", href: "#specs" },
 ];
 
+const btnClass =
+  "cursor-pointer whitespace-nowrap rounded-full bg-[#D4AF37] px-3 py-1.5 text-sm font-bold leading-none text-neutral-950 shadow-lg transition hover:bg-[#E5C45A] sm:px-3.5 sm:text-base";
+
 export default function Nav() {
+  const [contactOpen, setContactOpen] = useState(false);
+
+  useEffect(() => {
+    if (!contactOpen) return;
+
+    const onKeyDown = (e) => {
+      if (e.key === "Escape") setContactOpen(false);
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [contactOpen]);
+
   return (
     <>
       <nav
@@ -29,23 +54,64 @@ export default function Nav() {
       </nav>
 
       <div
-        className="absolute left-1/2 top-36 z-30 flex -translate-x-1/2 items-center gap-2 xl:left-auto xl:right-6 xl:top-8 xl:translate-x-0"
+        className="absolute left-1/2 top-36 z-30 flex -translate-x-1/2 flex-col items-center gap-2 xl:left-auto xl:right-6 xl:top-8 xl:translate-x-0 xl:items-end"
         data-aos="fade-left"
         data-aos-delay="200"
       >
-        <button
-          type="button"
-          className="cursor-pointer whitespace-nowrap rounded-full bg-[#D4AF37] px-3 py-1.5 text-sm font-bold leading-none text-neutral-950 shadow-lg transition hover:bg-[#E5C45A] sm:px-3.5 sm:text-base"
-        >
-          Invest / Donate
-        </button>
-        <button
-          type="button"
-          className="cursor-pointer whitespace-nowrap rounded-full bg-[#D4AF37] px-3 py-1.5 text-sm font-bold leading-none text-neutral-950 shadow-lg transition hover:bg-[#E5C45A] sm:px-3.5 sm:text-base"
-        >
-          Buy M.D Crypto
-        </button>
+        <div className="flex items-center gap-2">
+          <button type="button" className={btnClass}>
+            Invest / Donate
+          </button>
+          <button type="button" className={btnClass}>
+            Buy M.D Crypto
+          </button>
+        </div>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            className={btnClass}
+            onClick={() => setContactOpen(true)}
+          >
+            Contact
+          </button>
+          <button type="button" className={btnClass}>
+            Financing Available
+          </button>
+        </div>
       </div>
+
+      {contactOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/55 p-4"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="contact-modal-title"
+          onClick={() => setContactOpen(false)}
+        >
+          <div
+            className="relative w-full max-w-md rounded-2xl bg-[#E2E0D1] px-6 py-8 text-center shadow-2xl sm:px-8"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setContactOpen(false)}
+              className="absolute right-3 top-3 cursor-pointer rounded-full px-2 py-1 text-lg leading-none text-neutral-700 transition hover:bg-black/10"
+              aria-label="Close contact modal"
+            >
+              ×
+            </button>
+            <h2
+              id="contact-modal-title"
+              className="text-base font-bold uppercase tracking-wide text-neutral-950 sm:text-lg"
+            >
+              M.D. Motivational Enterprises LLC – Location
+            </h2>
+            <p className="mt-3 text-sm font-semibold text-neutral-800 sm:text-base">
+              56 St. NY. NY. 10019
+            </p>
+          </div>
+        </div>
+      )}
     </>
   );
 }

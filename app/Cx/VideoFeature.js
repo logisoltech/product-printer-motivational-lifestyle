@@ -77,7 +77,7 @@ export default function VideoFeature() {
 
   return (
     <section className="w-full px-4 bg-[#E2E0D1] pb-10 pt-6 sm:px-6 md:px-8 lg:pt-10">
-      <div className="mx-auto max-w-6xl" data-aos="zoom-in-up">
+      <div className="mx-auto max-w-5xl" data-aos="zoom-in-up">
         <div className="relative aspect-video overflow-hidden rounded-3xl sm:rounded-[1.75rem]">
           <video
             ref={videoRef}
