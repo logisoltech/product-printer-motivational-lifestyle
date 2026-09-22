@@ -62,7 +62,7 @@ export default function Hero() {
 
       <Nav />
 
-      <div className="absolute inset-x-0 bottom-3 z-20 flex translate-x-4 flex-col items-center sm:bottom-5 sm:translate-x-6 md:bottom-6 md:translate-x-16">
+      <div className="absolute inset-x-0 bottom-3 z-20 flex translate-x-10 flex-col items-center sm:bottom-5 sm:translate-x-14 md:bottom-6 md:translate-x-24">
         <Image
           src="/can.png"
           alt="Product can"
