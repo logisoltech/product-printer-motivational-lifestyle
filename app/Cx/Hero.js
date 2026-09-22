@@ -30,7 +30,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       <Image
-        src="/hero-bg.png"
+        src="/hero redo.png"
         alt=""
         fill
         priority
