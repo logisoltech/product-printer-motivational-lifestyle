@@ -34,7 +34,7 @@ export default function Hero() {
         alt=""
         fill
         priority
-        className="object-cover object-center"
+        className="object-cover object-[center_62%] scale-105"
         sizes="100vw"
       />
       {/* Top vignette so logo & pill nav stay readable */}
