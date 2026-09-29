@@ -82,7 +82,7 @@ export default function VideoFeature() {
           <video
             ref={videoRef}
             className="absolute inset-0 h-full w-full object-cover"
-            src="/printa.mp4"
+            src="/printer-6.mp4"
             playsInline
             preload="metadata"
             onEnded={handleEnded}
