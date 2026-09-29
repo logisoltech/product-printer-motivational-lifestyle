@@ -34,7 +34,7 @@ export default function Nav() {
   return (
     <>
       <nav
-        className="absolute left-1/2 top-21 z-30 w-[min(calc(100vw-2rem),72rem)] -translate-x-1/2 rounded-full border border-white/10 bg-black/40 px-6 py-2.5 shadow-lg backdrop-blur-md sm:top-8 sm:w-auto sm:px-20 sm:py-3"
+        className="absolute left-1/2 top-14 z-30 w-[min(calc(100vw-2rem),72rem)] -translate-x-1/2 rounded-full border border-white/10 bg-black/40 px-6 py-2.5 shadow-lg backdrop-blur-md sm:top-4 sm:w-auto sm:px-20 sm:py-3"
         aria-label="Primary"
         data-aos="fade-down"
         data-aos-delay="150"
@@ -54,7 +54,7 @@ export default function Nav() {
       </nav>
 
       <div
-        className="absolute left-1/2 top-36 z-30 flex -translate-x-1/2 flex-col items-center gap-2 xl:left-auto xl:right-6 xl:top-8 xl:translate-x-0 xl:items-end"
+        className="absolute left-1/2 top-28 z-30 flex -translate-x-1/2 flex-col items-center gap-2 xl:left-auto xl:right-6 xl:top-4 xl:translate-x-0 xl:items-end"
         data-aos="fade-left"
         data-aos-delay="200"
       >

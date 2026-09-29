@@ -5,6 +5,7 @@ import VideoTwo from "./Cx/VideoTwo";
 import PrinterAnnotatedSection from "./Cx/PrinterAnnotated";
 import SpecsSection from "./Cx/Specs";
 import IDKSection from "./Cx/IDK";
+import ModelMD2Section from "./Cx/ModelMD2";
 import View360Section from "./Cx/View360";
 import FooterSection from "./Cx/Footer";
 
@@ -14,9 +15,10 @@ export default function Home() {
       <Hero />
       <VideoFeature />
       <ThreeDPrinterSection />
+      <ModelMD2Section />
+      <VideoTwo />
       <IDKSection />
       {/* <PrinterAnnotatedSection /> */}
-      <VideoTwo />
       {/* <View360Section /> */}
       <SpecsSection />
       <FooterSection />

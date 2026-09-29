@@ -45,7 +45,7 @@ export default function Hero() {
 
       <a
         href="https://motivational-lifestyle.vercel.app/"
-        className="absolute left-6 top-6 z-30 sm:left-8 sm:top-8"
+        className="absolute left-6 top-3 z-30 sm:left-8 sm:top-4"
         aria-label="Home"
         data-aos="fade-right"
         data-aos-delay="80"
@@ -78,7 +78,7 @@ export default function Hero() {
 
       {/* Headline: below navbar — inner wrapper caps width on all breakpoints */}
       <div
-        className="absolute inset-x-0 top-28 z-20 flex justify-center px-5 sm:top-[5.25rem] sm:px-10 md:top-20 lg:top-24"
+        className="absolute inset-x-0 top-20 z-20 flex justify-center px-5 sm:top-16 sm:px-10 md:top-14 lg:top-16"
         data-aos="fade-up"
         data-aos-delay="220"
       >
