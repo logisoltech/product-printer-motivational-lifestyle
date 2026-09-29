@@ -78,7 +78,7 @@ export default function Hero() {
 
       {/* Headline: below navbar — inner wrapper caps width on all breakpoints */}
       <div
-        className="absolute inset-x-0 top-20 z-20 flex justify-center px-5 sm:top-16 sm:px-10 md:top-14 lg:top-16"
+        className="absolute inset-x-0 top-20 z-20 flex -translate-y-1 justify-center px-5 sm:top-16 sm:px-10 md:top-14 lg:top-16"
         data-aos="fade-up"
         data-aos-delay="220"
       >
@@ -89,7 +89,7 @@ export default function Hero() {
             <span className="block">Durable, flexible</span>
             <span className="block">Recyclable into any other product</span>
           </p>
-          <p className="mt-1.5 text-pretty text-base font-semibold leading-snug text-[#32455A] drop-shadow-[0_1px_10px_rgba(255,255,255,0.45)] sm:mt-2 sm:text-lg md:text-xl">
+          <p className="-mt-0.5 text-pretty text-base font-semibold leading-snug text-[#32455A] drop-shadow-[0_1px_10px_rgba(255,255,255,0.45)] sm:mt-0 sm:text-lg md:text-xl">
             All you need is the right A.I. software that we will supply for each
             product.
           </p>
