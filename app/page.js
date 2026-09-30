@@ -15,8 +15,8 @@ export default function Home() {
       <Hero />
       <VideoFeature />
       <ThreeDPrinterSection />
-      <ModelMD2Section />
       <VideoTwo />
+      <ModelMD2Section />
       <IDKSection />
       {/* <PrinterAnnotatedSection /> */}
       {/* <View360Section /> */}
