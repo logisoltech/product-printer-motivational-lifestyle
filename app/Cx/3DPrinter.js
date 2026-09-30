@@ -19,7 +19,7 @@ export default function ThreeDPrinterSection() {
           data-aos="fade-down"
           data-aos-delay="80"
         >
-          3D Home Hi-Speed Printer/Recycler has 2 Models - Expandable and Mini.
+          3D Home Hi-Speed Printer/Recycler has 3 Models - Expandable and Mini.
           All you need is the right A.I software that we will supply for each
           product.
         </p>
