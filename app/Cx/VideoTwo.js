@@ -38,7 +38,7 @@ export default function VideoTwo() {
         className="mx-auto mb-6 max-w-5xl text-center text-3xl font-black tracking-wide text-neutral-950 sm:mb-8 sm:text-4xl"
         data-aos="fade-down"
       >
-        Model MD3
+        Model MD2
       </h2>
       <div
         ref={containerRef}
