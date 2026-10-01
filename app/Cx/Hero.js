@@ -82,7 +82,10 @@ export default function Hero() {
         data-aos="fade-up"
         data-aos-delay="220"
       >
-        <div className="w-full max-w-[min(34rem,calc(100%-2rem))] text-center sm:max-w-[min(38rem,calc(100%-3rem))] md:max-w-[min(42rem,calc(100%-4rem))]">
+        <div className="relative w-full max-w-[min(34rem,calc(100%-2rem))] text-center sm:max-w-[min(38rem,calc(100%-3rem))] md:max-w-[min(42rem,calc(100%-4rem))]">
+          <p className="pointer-events-none absolute right-full top-1/2 mr-3 -translate-y-1/2 whitespace-nowrap text-4xl font-black leading-none tracking-tight text-black drop-shadow-[0_1px_12px_rgba(255,255,255,0.55)] sm:mr-4 sm:text-5xl md:mr-6 md:text-6xl lg:text-7xl">
+            MD-1
+          </p>
           <p className="mt-4 text-sm font-extrabold uppercase leading-tight tracking-[0.025em] text-black drop-shadow-[0_1px_12px_rgba(255,255,255,0.55)] sm:mt-5 sm:text-base sm:tracking-[0.02em] md:text-lg lg:text-xl">
             <span className="block uppercase">One product & food printer</span>
             <span className="block">One ingredient formula</span>

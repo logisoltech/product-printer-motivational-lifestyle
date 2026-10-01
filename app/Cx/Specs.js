@@ -9,7 +9,7 @@ export default function SpecsSection() {
           className="mb-8 text-center text-3xl font-black uppercase tracking-wide text-neutral-950 sm:mb-10 sm:text-4xl"
           data-aos="fade-down"
         >
-          SPECS
+          MD MODEL 1 SPECS
         </h2>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-12">
